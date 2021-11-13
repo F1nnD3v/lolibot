@@ -120,17 +120,9 @@ client.on('ready', () => {
       member.guild.channels.cache.get(canalBemVindo).send('Welcome,  ' + member.user.username.toString() + "! I hope u enjoy!")
       member.roles.add(starterRole).catch(console.error);
     }
-    channel.setName("Members: " + guild.memberCount)
-    channelStaffsOn.setName("Staff's: " + guild.roles.cache.get('760900730164609065').members.size)
-    channelBotsOn.setName("Bots: " + guild.roles.cache.get('760900732487598120').members.size)
-    if (guild.memberCount >= 100) {
-      message.guild.channels.cache.get(canalAnuncios).send("Hello everyone! Im here to say that the server has more than 100 members, and for that im here to give a <@&760900738409824276> to everyone for 5 days!!");
-      guild.members.cache.forEach(p => {
-        p.roles.add('760900738409824276').catch(e => {
-          console.log(e);
-        });
-      });
-    }
+    channel.setName("Members: " + guild.memberCount);
+    channelStaffsOn.setName("Staff's: " + guild.roles.cache.get('760900730164609065').members.size);
+    channelBotsOn.setName("Bots: " + guild.roles.cache.get('760900732487598120').members.size);
   })
   client.on('guildMemberRemove', member => {
     let guild = client.guilds.cache.get('751050463079563364')
