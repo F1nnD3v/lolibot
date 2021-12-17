@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
     const prefix = process.env['prefix'];
     const comandoStatus = require('../comandos/status.js');
     const comandoHelp = require('../comandos/help.js');
-    const comandoPing = require('./comandos_desabilitados/ping.js');
+    const comandoPing = require('./ping.js');
     const comandoDaily = require('../comandos/daily.js');
     const comandoBalance = require('../comandos/balance.js');
     const comandoColor = require('../comandos/setcolor.js');

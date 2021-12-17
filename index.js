@@ -95,7 +95,7 @@ client.on('ready', () => {
       });
       let welcomeEmbed = new Discord.MessageEmbed()
         .setTitle(`Welcome to ${client.guilds.cache.get(idServer).name}, ${member.user.username}`)
-        .addField(`I recommend you to read the ${member.guild.channels.cache.get(canalRegras)}`)
+        .addField(`I recommend you to read the ${canalRegras}`)
         .addField(`You can also use the different channel commands, you can check all by typing ${configs.prefix}help`)
         .addField(`Set your roles at ${member.guild.channels.cache.get(canalRoles)}`)
         .addField(`And say hello in ${member.guild.channels.cache.get(canalGeneral)}`)
